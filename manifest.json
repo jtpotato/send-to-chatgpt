@@ -1,0 +1,13 @@
+{
+    "name": "Workflow+",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://chat.openai.com/*"],
+            "js": ["dist/assets/index.js"],
+            "css": ["dist/assets/index.css"]
+        }
+    ]
+  }
