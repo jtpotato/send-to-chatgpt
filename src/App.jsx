@@ -1,16 +1,9 @@
 import { useEffect } from "react";
-import { pasteHandler } from "./pasteHandler" 
-import "./App.css";
+import { summarisePage } from "./summarisePage";
 
 function App() {
   useEffect(() => {
-    document.addEventListener("readystatechange", () => {
-      if (document.readyState == "complete") {
-        document.getElementById("prompt-textarea").addEventListener("paste", (event) => {
-          pasteHandler(event.clipboardData.getData("text/plain"))
-        })
-      }
-    })
+    summarisePage()
   }, [])
 
   return <></>;
