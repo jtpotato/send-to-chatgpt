@@ -5,9 +5,8 @@
     "manifest_version": 3,
     "content_scripts": [
         {
-            "matches": ["https://chat.openai.com/*"],
-            "js": ["dist/assets/index.js"],
-            "css": ["dist/assets/index.css"]
+            "matches": ["https://*/*"],
+            "js": ["dist/assets/index.js"]
         }
     ]
   }
