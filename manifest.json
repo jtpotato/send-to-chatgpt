@@ -6,9 +6,9 @@
   "action": {
     "default_title": "Workflow+"
   },
-  "permissions": ["activeTab", "scripting", "storage"],
-  "host_permissions": ["https://chat.openai.com/*"],
+  "permissions": ["activeTab", "scripting", "tabs"],
+  "host_permissions": ["https://*/*"],
   "background": {
-    "service_worker": "src/background/index.js"
+    "service_worker": "dist/index.js"
   }
 }
