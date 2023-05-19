@@ -5,6 +5,7 @@ specifiers:
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
   '@vitejs/plugin-react': ^4.0.0
+  chrome-types: ^0.1.195
   eslint: ^8.38.0
   eslint-plugin-react: ^7.32.2
   eslint-plugin-react-hooks: ^4.6.0
@@ -15,6 +16,7 @@ specifiers:
 
 dependencies:
   '@huggingface/inference': 2.3.3
+  chrome-types: 0.1.195
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -753,6 +755,10 @@ packages:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
     dev: true
+
+  /chrome-types/0.1.195:
+    resolution: {integrity: sha512-XWsOmMWKn8g6oBTvng+K+GSqnUEtP6GZOZBdNUIxu/LkDxLdFXZHeXuDnJrqS2QpQUV1Ea7QP/36z0M47vpsew==}
+    dev: false
 
   /color-convert/1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}

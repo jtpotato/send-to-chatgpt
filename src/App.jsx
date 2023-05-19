@@ -1,9 +1,23 @@
 import { useEffect } from "react";
-import { summarisePage } from "./summarisePage";
+
+function isURL(str) {
+  try {
+    new URL(str)
+    return true
+  }
+  catch (e) {
+    return false
+  }
+}
 
 function App() {
   useEffect(() => {
-    summarisePage()
+    document.addEventListener("paste", (e) => {
+      if(isURL(e.clipboardData.getData("text/plain"))) {
+        const url = e.clipboardData.getData("text/plain")
+        console.log(url)
+      }
+    })
   }, [])
 
   return <></>;

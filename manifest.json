@@ -1,12 +1,14 @@
 {
-    "name": "Workflow+",
-    "description": "Base Level Extension",
-    "version": "1.0",
-    "manifest_version": 3,
-    "content_scripts": [
-        {
-            "matches": ["https://*/*"],
-            "js": ["dist/assets/index.js"]
-        }
-    ]
+  "name": "Workflow+",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Workflow+"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["https://chat.openai.com/*"],
+  "background": {
+    "service_worker": "src/background/index.js"
   }
+}
